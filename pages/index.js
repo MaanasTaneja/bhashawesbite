@@ -93,7 +93,7 @@ export default function index() {
 
         <div className = "flex flex-col items-center">
             <img className = "rounded-full w-32 h-32" src = "/images/bhasha.jpeg" alt = "Amvi Diwedi"></img>
-            <p className = "text-lg font-bold">Amvi Diwedi</p>
+            <p className = "text-lg font-bold">Amvi Dwivedi</p>
             <p className = "text-md">Marketer</p>
         </div>
 
