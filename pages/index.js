@@ -45,7 +45,7 @@ export default function index() {
         </div>
       </div>
 
-      <div className = "flex justify-center items-center mx-auto p-10">
+      <div className = "flex justify-center items-center mx-auto p-20">
       <button className = "bg-white text-black p-4 rounded-lg hover:bg-black hover:text-white flex items-center gap-2"><Mail size={20}/>Notify Me</button>
       </div>
 
@@ -82,7 +82,7 @@ export default function index() {
         <div className = "flex flex-col items-center">
             <img className = "rounded-full w-32 h-32" src = "/images/bhasha.jpeg" alt = "Sri Kotala"></img>
             <p className = "text-lg font-bold">Sri Kotala</p>
-            <p className = "text-md">CEO</p>
+            <p className = "text-md">Lead Software Developer</p>
           </div>
 
           <div className = "flex flex-col items-center">
