@@ -1,114 +1,133 @@
 import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
+import { InstagramIcon, TwitterIcon } from "lucide-react";
+import { TwitchIcon } from "lucide-react";
+import { Mail } from "lucide-react";
+//cf9d72
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export default function Home() {
+export default function index() {
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              pages/index.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className= "min-h-screen bg-[#e67732] text-white font-serif">
+      <header className="sticky top-0 w-full bg-[#cf9d72]">
+      <nav className= "container mx-auto justify-between items-center py-6 px-4">
+        <div className = "flex text-left gap-4">
+          <Link href= "https://www.instagram.com/learnwithbhasha?igsh=YjdhaHh4amU1YWdj">
+          <InstagramIcon size = {32}/>
+          </Link>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <Link href = "">
+          <TwitterIcon size={32} />
+          </Link>
+          
+          <Link href= "/"> <span className = "text-lg">Home</span></Link>
+          <Link href= "/"> <span className="text-lg">About</span></Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </nav>
+      </header>
+
+      <div className ="mx-auto flex items-center justify-center p-10">
+        
+        <div className="flex flex-col justify-center items-center">
+         <img className = "bhashaicon" src = "/images/bhasha.jpeg" alt = "bhasha"></img>
+        <p className="text-4xl "><span className = "text-left">Bhasha</span></p>
+        <p className="text-md">Learn Indian Languages</p>
+        </div>
+        
+      </div>
+
+      <div className = "flex justify-center items-center mx-auto p-10">
+        <div className="space-y-4">
+          <p className="text-3xl font-bold opacity-50"><span className="flex justify-center">જલ્દી આવે છે</span></p>
+          <p className="text-4xl font-bold opacity-75"><span className="flex justify-center">சமீபத்தில் வரும்</span></p>
+          <h2 className="text-5xl font-bold my-4"><span className="flex justify-center">Coming Soon.</span></h2>
+          <p className="text-4xl font-bold opacity-75"><span className="flex justify-center">త్వరలో వస్తుంది</span></p>
+          <p className="text-3xl font-bold opacity-50"><span className="flex justify-center">आ रहा है</span></p>
+        </div>
+      </div>
+
+      <div className = "flex justify-center items-center mx-auto p-10">
+      <button className = "bg-white text-black p-4 rounded-lg hover:bg-black hover:text-white flex items-center gap-2"><Mail size={20}/>Notify Me</button>
+      </div>
+
+      <section className="container flex flex-col items-center mx-auto p-10">
+        <div className="text-left">
+        <h1 className="text-5xl font-bold py-10">Who we are?</h1>
+
+        <p className="text-lg py-2">Bhāsha was founded with the goal of making Indian language learning as simple as possible.</p>
+        <p className="text-lg py-2">Currently, there are limited resources to learn Indian  languages online, which are not customizable to a user’s personalized needs.</p>
+        <p className="text-lg py-2">Our vision is  to offer all of India’s major languages in one app, and to spearhead a movement to spread awareness on the beauty and rich history of Indian langauges.</p>
+        <p className="text-lg py-2">Choose a language and we’ll take care of the rest.</p> 
+
+        <p className="text-2xl italic font-bold py-5">Join Us.</p>
+        </div>
+      
+      </section>
+
+      <section className="container flex flex-col items-left mx-auto p-10">
+
+        <h1 className="text-5xl font-bold py-10">Meet The Team</h1>
+        <div className = "container grid grid-cols-3 gap-5">
+          <div className = "flex flex-col items-center">
+            <img className = "rounded-full w-32 h-32" src = "/images/bhasha.jpeg" alt = "Shrivas Manglampalli"></img>
+            <p className = "text-lg font-bold">Shrivas Manglampalli</p>
+            <p className = "text-md">CEO</p>
+          </div>
+
+          <div className = "flex flex-col items-center">
+            <img className = "rounded-full w-32 h-32" src = "/images/bhasha.jpeg" alt = "Gurtej Bagga"></img>
+            <p className = "text-lg font-bold">Gurtej Bagga</p>
+            <p className = "text-md">CTO</p>
+        </div>
+
+        <div className = "flex flex-col items-center">
+            <img className = "rounded-full w-32 h-32" src = "/images/bhasha.jpeg" alt = "Sri Kotala"></img>
+            <p className = "text-lg font-bold">Sri Kotala</p>
+            <p className = "text-md">CEO</p>
+          </div>
+
+          <div className = "flex flex-col items-center">
+            <img className = "rounded-full w-32 h-32" src = "/images/bhasha.jpeg" alt = "Shalini Jadhav"></img>
+            <p className = "text-lg font-bold">Shalini Jadhav</p>
+            <p className = "text-md">Marketer</p>
+        </div>
+
+        <div className = "flex flex-col items-center">
+            <img className = "rounded-full w-32 h-32" src = "/images/bhasha.jpeg" alt = "Amvi Diwedi"></img>
+            <p className = "text-lg font-bold">Amvi Diwedi</p>
+            <p className = "text-md">Marketer</p>
+        </div>
+
+        </div>
+      
+      </section>
+
+    {/* <section className="container flex flex-col items-center mx-auto p-10">}
+      <section className="container flex flex-col items-center mx-auto p-10">
+        <div className="text-left">
+        <h1 className="text-4xl font-bold py-10">Apply</h1>
+
+        <p className="text-lg py-2">Bhāsha was founded with the goal of making Indian language learning as simple as possible.</p>
+        <p className="text-lg py-2">Currently, there are limited resources to learn Indian  languages online, which are not customizable to a user’s personalized needs.</p>
+        <p className="text-lg py-2">Our vision is  to offer all of India’s major languages in one app, and to spearhead a movement to spread awareness on the beauty and rich history of Indian langauges.</p>
+        <p className="text-lg py-2">Choose a language and we’ll take care of the rest.</p> 
+
+        <p className="text-2xl font-bold py-5">Join Us</p>
+        </div>
+      
+      </section>
+      */}
+
+      <section className="bg-white">
+        <div className="container flex flex-col items-left mx-auto p-10">
+          <h1 className="text-4xl text-black font-bold py-10">Get Notified</h1>
+          <form action="" method="post" className = "flex flex-col gap-10">
+            <input type = "text" placeholder = "Name (eg. John Doe)..." className="p-4 bg-gray-100 rounded-lg w-96"/>
+            <input type = "email" placeholder = "Email (eg.johndoe@abc.com)" className="p-4 bg-gray-100 rounded-lg w-96"/>
+            <button className = "bg-black text-white w-48 my-10 p-4 rounded-2xl hover:bg-gray-300 hover:text-black">Notify Me</button>
+          </form>
+          </div>
+      </section>
+
     </div>
-  );
+  )
 }
