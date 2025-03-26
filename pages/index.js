@@ -86,16 +86,28 @@ export default function index() {
             <p className = "text-md">Lead Software Developer</p>
           </div>
 
-          <div className = "flex flex-col items-center">
+          {/* <div className = "flex flex-col items-center">
             <img className = "rounded-full w-32 h-32" src = "/images/bhasha.jpeg" alt = "Shalini Jadhav"></img>
             <p className = "text-lg font-bold">Shalini Jadhav</p>
             <p className = "text-md">Marketer</p>
-        </div>
+        </div> */}
 
         <div className = "flex flex-col items-center">
             <img className = "rounded-full w-32 h-32" src = "/images/bhasha.jpeg" alt = "Amvi Diwedi"></img>
             <p className = "text-lg font-bold">Amvi Dwivedi</p>
             <p className = "text-md">Marketer</p>
+        </div>
+
+        <div className = "flex flex-col items-center">
+            <img className = "rounded-full w-32 h-32" src = "/images/bhasha.jpeg" alt = "Amvi Diwedi"></img>
+            <p className = "text-lg font-bold">Abhinav Jain</p>
+            <p className = "text-md">Developer</p>
+        </div>
+
+        <div className = "flex flex-col items-center">
+            <img className = "rounded-full w-32 h-32" src = "/images/bhasha.jpeg" alt = "Amvi Diwedi"></img>
+            <p className = "text-lg font-bold">Rhythm Chawla</p>
+            <p className = "text-md">Developer</p>
         </div>
 
         </div>
