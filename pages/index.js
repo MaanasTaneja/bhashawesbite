@@ -21,6 +21,7 @@ export default function index() {
           
           <Link href= "/"> <span className = "text-lg">Home</span></Link>
           <Link href= "/"> <span className="text-lg">About</span></Link>
+          <Link href= "/admin"> <span className="text-lg">Admin</span></Link>
         </div>
       </nav>
       </header>
